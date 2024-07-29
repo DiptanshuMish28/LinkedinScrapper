@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap');
+
+#slider {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #f3f6f9;
+    width: 0;
+    transition: width 0.4s ease;
+    height: 100vh;
+    overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sheader {
+    position: sticky;
+    top: 0;
+    padding: 5px 10px; /* Adjusted padding for a thinner header */
+    background-color: #0077b5;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+#sheader > div > h1,
+#sfooter > h2 {
+    color: white;
+    margin: 0;
+}
+
+#sbodycontainer {
+    padding: 20px;
+    color: #1e2a41;
+}
+
+#sfooter {
+    position: sticky;
+    bottom: 0;
+    padding: 10px; /* Adjusted padding for a thinner bottom section */
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+#save_profile_data_button {
+    background-color: #0077b5; /* Background color applied only to the button */
+    color: #ffffff; /* Text color for the button */
+}
+
+#extractBtn,
+#savepdf {
+    display: inline-block;
+    border-radius: 25px;
+    border: none;
+    color: #0077b5;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#extractBtn:hover,
+#savepdf:hover {
+    transform: scale(1.05);
+}
+
+.internal_button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0077b5;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.internal_button:hover {
+    background-color: #005e8e;
+    transform: scale(1.05);
+}
+
+.internal_button:active {
+    background-color: #004d73;
+    transform: scale(0.95);
+}
+
+.sticky_buttons {
+    position: sticky;
+    top: 20px;
+    font-size: 14px;
+    margin: 10px;
+}
+
+#scan {
+    padding: 10px;
+    opacity: 1;
+    font-size: 20px;
+    color: white;
+}
+
+#scancontainer {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #0077b5;
+    padding: 10px;
+}
+
+#scanlabel {
+    display: none; /* Hide the scan label */
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    resize: none;
+    background-color: #ffffff;
+}
+
+textarea:hover {
+    background-color: #f3f6f9;
+}
+
+#sheaderheader {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+#basicprofile,
+#experiencetext,
+#certificationstext,
+#skillstext {
+    height: 50px;
+}
