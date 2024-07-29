@@ -258,7 +258,7 @@ function saveProfileData() {
   console.log('Profile Data:', profileData);
 
   // Post the data to the API
-  fetch('https://q750llltx0.execute-api.eu-north-1.amazonaws.com/prod/leads', {
+  fetch('#API_LINK', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
